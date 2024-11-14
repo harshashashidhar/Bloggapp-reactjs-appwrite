@@ -12,13 +12,13 @@ export class AuthService {
   }
   async createAccount({ email, password, name }) {
     try {
-      const sessions = await this.account.listSessions();
-      console.log(sessions);
-       if (sessions.total > 0)
-         { 
+      // const sessions = await this.account.listSessions();
+      // console.log(sessions);
+      //  if (sessions.total > 0)
+      //    { 
          
-          await this.account.deleteSession('current');
-         }
+      //     await this.account.deleteSession('current');
+      //    }
           
      
 
